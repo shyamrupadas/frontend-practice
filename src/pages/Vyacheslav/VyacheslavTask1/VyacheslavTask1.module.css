@@ -1,0 +1,18 @@
+.myClass {
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+
+  margin-top: 40px;
+  padding: 16px;
+  max-width: 200px;
+}
+
+.myClass:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+.anotherClass {
+  padding: 8px;
+}
