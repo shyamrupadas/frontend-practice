@@ -1,0 +1,1 @@
+export { Vyacheclav } from './Vyacheslav'
