@@ -6,7 +6,10 @@ export const Maxim = () => {
       <p>
         <Link to={'/'}>Home</Link>
       </p>
-      Maxim: coming soon
+      Maxim:
+      <p>
+        <Link to="first-task">FirstTask</Link>
+      </p>
     </div>
   )
 }
