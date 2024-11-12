@@ -17,7 +17,31 @@
   padding: 8px;
 }
 
-button {
+.first-button:hover,
+.second-button:hover,
+.third-button:hover,
+.fourth-button:hover,
+.fifth-button:hover,
+.sixth-button:hover {
+  background-color:aqua;
+  transform:translateY(-5px);
+}
+
+.fourth-button,
+.fifth-button,
+.sixth-button {
+  display: flex;
+  margin-left: 400px;
+}
+
+
+
+.first-button,
+.second-button,
+.third-button,
+.fourth-button,
+.fifth-button,
+.sixth-button {
   border-radius: 100px;
   background-color:blue;
   border: 1px solid;
@@ -25,22 +49,19 @@ button {
   color: white;
   padding: 10px;
   transition: transform 0.2s ease-in-out;
+  margin-top: 15px;
 }
 
-button:hover {
-  background-color:aqua;
-  transform:translateY(-5px);
-}
-
-a {
+.YouTube {
   color:blue;
   margin-left: 10px;
 }
 
-a:hover {
+.YouTube:hover {
   color:aqua;
 }
 
-p {
+.myText {
   text-indent: 20px;
+  border: 5px solid black;
 }
