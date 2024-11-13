@@ -18,8 +18,8 @@
 }
 
 .verticalButton {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 5px;
   align-items: flex-start;
@@ -34,31 +34,31 @@
 }
 
 .allButton button:hover {
-  background-color:#64B5F6;
-  transform:translateY(-5px);
+  background-color: #64b5f6;
+  transform: translateY(-5px);
 }
 
 .allButton button {
   border-radius: 100px;
-  background-color:#90CAF9;
+  background-color: #90caf9;
   border: 1px solid black;
   cursor: pointer;
-  color: white;
   padding: 10px;
   transition: transform 0.2s ease-in-out;
   margin-top: 15px;
 }
 
 .youTube {
-  color:blue;
+  color: blue;
   margin-left: 10px;
 }
 
 .youTube:hover {
-  color:aqua;
+  color: brown;
 }
 
 .myText {
   border: 1px solid gray;
   border-radius: 8px;
+  padding: 16px;
 }
