@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom'
 
 // Здесь импортируется Модульный CSS
 import css from './MaximTask1.module.css'
-import React from 'react'
 
 // 'это реакт компонент, доступный по адресу (роуту) /maxim/first-task'. Компонент объявлен как функция JS, возаращая JSX.
 // Этот компонент (функция) может принимать пропсы (аргументы) - для того чтобы работать с ними.
 export const MaximTask1 = () => {
   // В теле функции обычно пишется логика, которая понадобится для отображения. Мы пока это не трогаем.
- 
   // Возвращает компонент специальный синтаксис: JSX. Он очень похож на HTML, но у него побольше возможностей.
   // Пока можешь просто учиться верстать на JSX
   return (
@@ -19,7 +17,7 @@ export const MaximTask1 = () => {
         <Link to={'/'}>Home</Link>
       </p>
       <h1>ПУТЯМИ ДОБРОТЫ</h1>
-      <div className={css['myText']}>
+      <div className={css.myText}>
         <p>
        Когда человек сознательно или интуитивно выбирает себе в жизни какую-то цель
        жизненную задачу, он невольно дает себе оценку. По тому, ради чего человек живет, 
@@ -41,14 +39,19 @@ export const MaximTask1 = () => {
         кнопок, расположенных в одну линию по горизонтали и любую ссылку. Для стилизации
         используй CSS Модули. Вот пример стилизованного c помощью SCC модулей блока:
        </p>
-        <button className={css['first-button']}>Нажми меня 1</button>
-        <button className={css['second-button']}>Нажми меня 2</button>
-        <button className={css['third-button']}>Нажми меня 3</button>
-        <button className={css['fourth-button']}>Нажми меня 4</button>
-        <button className={css['fifth-button']}>Нажми меня 5</button>
-        <button className={css['sixth-button']}>Нажми меня 6</button>
-
-      <a href='https://www.youtube.com/' className={css['YouTube']}>Youtube</a>
+      <div className={css.allButton}>
+        <div className={css.horizontalButton}>
+          <button>Нажми меня 1</button>
+          <button>Нажми меня 2</button>
+          <button>Нажми меня 3</button>
+        </div>
+        <div className={css.verticalButton}>
+          <button>Нажми меня 4</button>
+          <button>Нажми меня 5</button>
+          <button>Нажми меня 6</button>
+        </div>
+      </div>
+      <a href='https://www.youtube.com/' className={css.youTube}>Youtube</a>
       <div className={css.myClass}>стилизованный div</div>
     </div>
   )

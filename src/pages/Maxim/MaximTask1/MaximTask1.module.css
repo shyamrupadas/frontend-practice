@@ -17,34 +17,31 @@
   padding: 8px;
 }
 
-.first-button:hover,
-.second-button:hover,
-.third-button:hover,
-.fourth-button:hover,
-.fifth-button:hover,
-.sixth-button:hover {
-  background-color:aqua;
+.verticalButton {
+  display:flex;
+  flex-direction:column;
+  gap: 20px;
+  padding: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.horizontalButton {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  align-items: flex-start;
+}
+
+.allButton button:hover {
+  background-color:#64B5F6;
   transform:translateY(-5px);
 }
 
-.fourth-button,
-.fifth-button,
-.sixth-button {
-  display: flex;
-  margin-left: 400px;
-}
-
-
-
-.first-button,
-.second-button,
-.third-button,
-.fourth-button,
-.fifth-button,
-.sixth-button {
+.allButton button {
   border-radius: 100px;
-  background-color:blue;
-  border: 1px solid;
+  background-color:#90CAF9;
+  border: 1px solid black;
   cursor: pointer;
   color: white;
   padding: 10px;
@@ -52,16 +49,16 @@
   margin-top: 15px;
 }
 
-.YouTube {
+.youTube {
   color:blue;
   margin-left: 10px;
 }
 
-.YouTube:hover {
+.youTube:hover {
   color:aqua;
 }
 
 .myText {
-  text-indent: 20px;
-  border: 5px solid black;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
