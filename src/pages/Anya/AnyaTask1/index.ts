@@ -1,0 +1,1 @@
+export { AnyaTask1 } from './AnyaTask1'
