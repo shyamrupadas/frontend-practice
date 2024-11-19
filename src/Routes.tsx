@@ -9,6 +9,8 @@ import { VyacheslavTask1 } from './pages/Vyacheslav/VyacheslavTask1'
 import { MaximTask1 } from './pages/Maxim/MaximTask1'
 import { Anya } from './pages/Anya'
 import { AnyaTask1 } from './pages/Anya/AnyaTask1'
+import { Semion } from './pages/Semion'
+import { SemionTask1 } from './pages/Semion/SemionTask1'
 
 export const Routes = createBrowserRouter(
   [
@@ -33,6 +35,8 @@ export const Routes = createBrowserRouter(
       path: '/anya/first-task',
       element: <AnyaTask1 />
     },
+    { path: '/semion', element: <Semion /> },
+    { path: '/semion/first-task', element: <SemionTask1 /> },
   ],
   {
     future: {

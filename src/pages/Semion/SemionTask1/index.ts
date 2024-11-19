@@ -1,0 +1,1 @@
+export { SemionTask1 } from './SemionTask1'

@@ -19,6 +19,9 @@ export const Main = () => {
       <p>
         <Link to="/anya">Аня</Link>
       </p>
+      <p>
+        <Link to="/semion">Семён</Link>
+      </p>
     </div>
   )
 }
