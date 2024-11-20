@@ -22,6 +22,9 @@ export const Main = () => {
       <p>
         <Link to="/semion">Семён</Link>
       </p>
+      <p>
+        <Link to="/nastya">Настя</Link>
+      </p>
     </div>
   )
 }

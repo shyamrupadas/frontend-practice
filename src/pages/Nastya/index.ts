@@ -1,0 +1,1 @@
+export { Nastya } from './Nastya'
