@@ -1,64 +1,28 @@
-.myClass {
-  border: 1px solid gray;
-  border-radius: 8px;
-  background-color: whitesmoke;
-
-  margin-top: 40px;
-  padding: 16px;
-  max-width: 200px;
-}
-
-.myClass:hover {
-  background-color: wheat;
-  cursor: pointer;
-}
-
-.anotherClass {
-  padding: 8px;
-}
-
-.verticalButton {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 5px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.horizontalButton {
-  display: flex;
-  gap: 20px;
-  padding: 5px;
-  align-items: flex-start;
-}
-
-.allButton button:hover {
+.myButton:hover {
   background-color: #64b5f6;
   transform: translateY(-5px);
 }
 
-.allButton button {
+.myButton {
   border-radius: 100px;
   background-color: #90caf9;
   border: 1px solid black;
   cursor: pointer;
   padding: 10px;
   transition: transform 0.2s ease-in-out;
-  margin-top: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.youTube {
-  color: blue;
-  margin-left: 10px;
-}
-
-.youTube:hover {
-  color: brown;
+.myButtonContainer {
+  display: flex;
+  gap: 16px;
 }
 
 .myText {
   border: 1px solid gray;
   border-radius: 8px;
   padding: 16px;
+  margin-top: 25px;
 }
