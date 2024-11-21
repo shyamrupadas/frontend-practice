@@ -17,11 +17,11 @@ export const MaximTask1 = () => {
         <Link to={'/'}>Home</Link>
       </p>
       <h1>ПУТЯМИ ДОБРОТЫ</h1>
-        <div className ={css.myButtonContainer}>
-          <button className={css.myButton}>Нажми меня 1</button>
-          <button className={css.myButton}>Нажми меня 2</button>
-          <button className={css.myButton}>Нажми меня 3</button>
-        </div>
+      <div className={css.myButtonContainer}>
+        <button className={css.myButton}>Нажми меня 1</button>
+        <button className={css.myButton}>Нажми меня 2</button>
+        <button className={css.myButton}>Нажми меня 3</button>
+      </div>
       <div className={css.myText}>
         <p>
           Когда человек сознательно или интуитивно выбирает себе в жизни какую-то цель
