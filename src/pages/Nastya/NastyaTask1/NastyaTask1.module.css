@@ -1,5 +1,47 @@
-.button-block-horizontal {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.myText {
+    border: 1px solid deeppink;
+    border-radius: 15px;
+  
+
 }
+
+.verticalButton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+  }
+  
+  .horizontalButton {
+    display: flex; 
+    
+    gap: 20px;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  
+  .allButton button:hover {
+    background-color:
+  }
+  
+  .allButton button {
+    border-radius: 100px;
+    background-color: #f539ff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 15px;
+  }
+
+  .Kaksvoim {
+    color: deeppink;
+    padding-right: 10px;
+  }
+
+  .Kaksvoim:hover {
+    color: #560033;
+  }
