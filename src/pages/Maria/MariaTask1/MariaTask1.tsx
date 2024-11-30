@@ -1,15 +1,13 @@
 import { Link } from 'react-router-dom'
 
-export const Maria = () => {
+
+export const MariaTask1 = () => {
   return (
     <div>
       <p>
         <Link to={'/'}>Home</Link>
       </p>
-      Maria
-      <p>
-        <Link to="first-task">FirstTask</Link>
-      </p>
+      <div>Hello world</div>
     </div>
-  )
+    )
 }
