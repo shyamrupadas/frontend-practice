@@ -10,6 +10,9 @@ export const Maria = () => {
       <p>
         <Link to="first-task">FirstTask</Link>
       </p>
+      <p>
+        <Link to="second-task">SecondTask</Link>
+      </p>
     </div>
   )
 }

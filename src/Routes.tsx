@@ -14,6 +14,7 @@ import { SemionTask1 } from './pages/Semion/SemionTask1'
 import { Nastya } from './pages/Nastya'
 import { NastyaTask1 } from './pages/Nastya/NastyaTask1'
 import { MariaTask1 } from './pages/Maria/MariaTask1/MariaTask1.tsx'
+import { MariaTask2 } from './pages/Maria/MariaTask2/MariaTask2.tsx'
 
 export const Routes = createBrowserRouter(
   [
@@ -31,6 +32,7 @@ export const Routes = createBrowserRouter(
     { path: '/maxim/first-task', element: <MaximTask1 /> },
     { path: '/maria', element: <Maria /> },
     { path: '/maria/first-task', element: <MariaTask1 /> },
+    { path: '/maria/second-task', element: <MariaTask2 /> },
     {
       path: '/anya',
       element: <Anya />,
