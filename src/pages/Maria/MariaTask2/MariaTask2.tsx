@@ -1,16 +1,25 @@
 import { Link } from 'react-router-dom'
-import {useState } from 'react'
+import { useState } from 'react'
+import css from './MariaTask2.module.css'
 
-
+function Button({ num, isActive, onClick }) {
+  return (
+    <button
+      onClick={() => onClick(num)}
+      className={`${css.buttonClass} ${isActive ? css.green : css.grey}`}
+    >
+      {num}
+    </button>
+  )
+}
 export const MariaTask2 = () => {
-
-const [isButtonPressed, setIsButtonPressed] = useState <number | null>(1);
-
+  const [isButtonPressed, setIsButtonPressed] = useState<number>(1)
 
   const handleClick = (buttonId: number) => {
     setIsButtonPressed(buttonId)
   }
 
+  const buttons: number[] = [1, 2, 3, 4]
 
   return (
     <div>
@@ -18,14 +27,17 @@ const [isButtonPressed, setIsButtonPressed] = useState <number | null>(1);
         <Link to={'/'}>Home</Link>
       </p>
       <div>
+        <p> Нажата кнопка номер {isButtonPressed} </p>
         <div>
-          <button onClick={() => handleClick(1)} style={{backgroundColor: isButtonPressed === 1 ? 'green' : 'grey' }}>1</button>
-          <button onClick={() => handleClick(2)} style={{backgroundColor: isButtonPressed === 2 ? 'green' : 'grey' }}>2</button>
-          <button onClick={() => handleClick(3)} style={{backgroundColor: isButtonPressed === 3 ? 'green' : 'grey' }}>3</button>
-          <button onClick={() => handleClick(4)} style={{backgroundColor: isButtonPressed === 4 ? 'green' : 'grey' }}>4</button>
+          {buttons.map((num) => (
+            <Button
+              num={num}
+              isActive={isButtonPressed === num}
+              onClick={() => handleClick(num)}
+            />
+          ))}
         </div>
-
       </div>
     </div>
-    )
+  )
 }

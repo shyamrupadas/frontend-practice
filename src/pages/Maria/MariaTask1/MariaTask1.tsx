@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-
 export const MariaTask1 = () => {
+  const [numberOfButtonPressed, setNumberOfButtonPressed] = useState<number>(0)
+  const [sumOfButtons, setSumOfButtons] = useState<number>(0)
 
-const [numberOfButtonPressed, setNumberOfButtonPressed] = useState <number>(0);
-const [sumOfButtons, setSumOfButtons] = useState <number>(0)
-
-  const handleClick = () => {
-    setNumberOfButtonPressed (numberOfButtonPressed + 1);
-    setSumOfButtons(sumOfButtons + Number(event.target.innerText) )
+  const handleClick = (event) => {
+    setNumberOfButtonPressed(numberOfButtonPressed + 1)
+    setSumOfButtons(sumOfButtons + Number(event.target.innerText))
   }
-
 
   return (
     <div>
@@ -34,9 +31,13 @@ const [sumOfButtons, setSumOfButtons] = useState <number>(0)
           <button onClick={handleClick}>8</button>
           <button onClick={handleClick}>9</button>
         </div>
-        <div>Было нажато <span>{numberOfButtonPressed}</span></div>
-        <div>Сумма <span>{sumOfButtons}</span></div>
+        <div>
+          Было нажато <span>{numberOfButtonPressed}</span>
+        </div>
+        <div>
+          Сумма <span>{sumOfButtons}</span>
+        </div>
       </div>
     </div>
-    )
+  )
 }
